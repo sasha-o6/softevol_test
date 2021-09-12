@@ -1,0 +1,250 @@
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  border-bottom: 2px solid transparent;
+}
+
+a:hover,
+a:focus {
+  border-bottom: 2px solid black;
+}
+
+header {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+}
+
+header .wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1650px;
+  height: 54px;
+  padding: 0 17px;
+  margin: 0 auto;
+}
+
+header .wrap .fa-bars {
+  cursor: pointer;
+}
+
+@media (min-width: 1300px) {
+  header .wrap .fa-bars {
+    display: none;
+  }
+}
+
+@media (max-width: 1300px) {
+  header .wrap .fa-bars {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+}
+
+header .wrap .block-logo {
+  margin-left: -20px;
+}
+
+@media (max-width: 1300px) {
+  header .wrap .block-logo {
+    margin: auto;
+  }
+}
+
+header .wrap .block-logo a {
+  height: 43px;
+}
+
+header .wrap .block-logo a:hover {
+  border-bottom: 1px solid transparent;
+}
+
+header .wrap .block-logo .logo {
+  height: 40px;
+  -webkit-transform: scale(0.55);
+          transform: scale(0.55);
+}
+
+header .wrap .surface {
+  position: relative;
+  margin-left: 15px;
+  letter-spacing: -1px;
+}
+
+@media (max-width: 1300px) {
+  header .wrap .surface {
+    display: none;
+  }
+}
+
+header .wrap .surface h2 {
+  font-size: 18px;
+}
+
+header .wrap .surface::before {
+  content: "";
+  position: absolute;
+  top: calc(50% - 12.5px);
+  left: -35px;
+  width: 3px;
+  height: 25px;
+  background-color: black;
+}
+
+header .wrap nav .nav-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding: 0;
+  margin-left: 30px;
+}
+
+@media (max-width: 1300px) {
+  header .wrap nav .nav-bar {
+    display: none;
+  }
+}
+
+header .wrap nav .nav-bar li {
+  position: relative;
+  margin-right: 38px;
+  list-style-type: none;
+  letter-spacing: -0.5px;
+}
+
+header .wrap nav .nav-bar i {
+  position: absolute;
+  top: calc(50% - 4px);
+  right: -15px;
+  height: 3px;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+header .wrap .all {
+  font-size: 13px;
+  margin-left: auto;
+  letter-spacing: -0.2px;
+}
+
+header .wrap .all i {
+  height: 3px;
+  font-size: 10px;
+  font-weight: 700;
+  margin-left: 5px;
+}
+
+@media (max-width: 1300px) {
+  header .wrap .all {
+    display: none;
+  }
+}
+
+header .wrap .search {
+  position: relative;
+  margin-left: 35px;
+  letter-spacing: -0.2px;
+}
+
+@media (max-width: 1300px) {
+  header .wrap .search {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin-left: 17px;
+  }
+}
+
+@media (max-width: 1300px) {
+  header .wrap .search a {
+    display: none;
+  }
+}
+
+header .wrap .search .fa-search {
+  position: absolute;
+  right: -20px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+@media (max-width: 1300px) {
+  header .wrap .search .fa-search {
+    position: static;
+    margin-left: auto;
+  }
+}
+
+header .wrap .shopping-cart {
+  letter-spacing: -0.2px;
+  margin-left: 58px;
+}
+
+@media (max-width: 1300px) {
+  header .wrap .shopping-cart {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 1300px) {
+  header .wrap .shopping-cart a {
+    display: none;
+  }
+}
+
+header .wrap .sign-in {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  margin-left: 20px;
+}
+
+@media (max-width: 1300px) {
+  header .wrap .sign-in {
+    margin-left: 10px;
+  }
+  header .wrap .sign-in p {
+    display: none;
+  }
+}
+
+header .wrap .sign-in p a:hover {
+  border-bottom: 2px solid black;
+}
+
+header .wrap .sign-in a:hover {
+  border-bottom: 2px solid transparent;
+}
+
+header .wrap .sign-in .user {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto 13px;
+  width: 32px;
+  height: 32px;
+  color: #707070;
+  border: 1px solid #707070;
+  border-radius: 100%;
+  padding: 5px;
+  margin-top: 5px;
+}
